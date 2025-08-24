@@ -52,8 +52,7 @@ h1 {
 }
 
 .answers label {
-    display: flex;
-    align-items: center;
+    display: block; /* Cambio aquí para que cada opción ocupe su propia línea */
     cursor: pointer;
     background-color: #e9eff5;
     padding: 12px;
@@ -96,10 +95,13 @@ input[type="radio"] {
     font-weight: bold;
 }
 
-.correct {
-    color: #28a745;
+/* Nuevas clases para los colores de las respuestas */
+.correct-answer {
+    background-color: #d4edda !important; /* Verde claro */
+    border: 1px solid #c3e6cb;
 }
 
-.incorrect {
-    color: #dc3545;
+.incorrect-answer {
+    background-color: #f8d7da !important; /* Rojo claro */
+    border: 1px solid #f5c6cb;
 }
